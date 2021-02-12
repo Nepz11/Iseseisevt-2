@@ -9,10 +9,8 @@ inimesed = int(input("Inimeste arv: "))
 kohad = int(input("Kohtade arv: "))
 buss = inimesed // kohad
 vbuss = inimesed % kohad
-if inimesed >= 41:
+if vbuss > 0:
     buss = buss + 1
-elif inimesed >= 81:
-    buss = buss + 2
 else:
     print("Liiga palju inimesi")
 print("Busse vaja:",buss)
